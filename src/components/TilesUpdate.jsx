@@ -1,13 +1,27 @@
+import { getAllTiles } from '@/lib/data';
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 
-const TilesUpdate = () => {
+const TilesUpdate = async() => {
+    const tiles = await getAllTiles();
+    console.log(tiles);
+
     return (
-        <div className='flex justify-between gap-4 items-center bg-gray-100 py-4 px-2 container mx-auto'>
-            <button className='btn bg-red-500 text-white'>Latest News</button>
-            <Marquee pauseOnHover={true} speed={100}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, quae nemo quasi eligendi exercitationem excepturi ab est cumque, ut in natus. Quasi, iure magnam sunt unde dolorem obcaecati autem voluptates?
+        <div className='flex justify-between gap-4 items-center bg-gray-100 py-4 px-2 container mx-auto mt-4'>
+            <button className='btn bg-red-500 text-white'>Tiles Update</button>
+
+            
+            <Marquee pauseOnHover={true} speed={100} gradient={false}>
+                {
+                    tiles.map((tile, ind) => (
+                        <span key={ind} className="mx-4 font-medium">
+                            New Arrival:{tile.title} <span className="ml-4">|</span> 
+                            <span className='mx-4'>{tile.description}</span> <span className="ml-4">|</span>
+                        </span>
+                    ))
+                }
             </Marquee>
+            
         </div>
     );
 };

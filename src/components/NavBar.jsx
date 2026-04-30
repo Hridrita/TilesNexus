@@ -39,8 +39,8 @@ const NavBar = () => {
               {links}
             </ul>
           </div>
-          <Image src={NavImg} alt="Tiles" width={30} height={30}></Image>
-          <Link href={"/"} className="btn btn-ghost text-xl text-[#00a19e]">TilesNexus</Link>
+          <Image src={NavImg} alt="Tiles" width={30} height={30} className="ml-28"></Image>
+          <Link href={"/"} className="btn btn-ghost text-xl text-[#00a19e] ">TilesNexus</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-8">
@@ -48,7 +48,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link href={"/login"} className="btn btn-accent">Login</Link>
+          <Link href={"/login"} className="btn btn-accent mr-28">Login</Link>
         </div>
       </div>
     </div>
