@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AllTiles = () => {
+const AllTilesPage = () => {
     return (
         <div>
             <h2>All tiles</h2>
@@ -8,4 +8,4 @@ const AllTiles = () => {
     );
 };
 
-export default AllTiles;
+export default AllTilesPage;
