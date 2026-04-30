@@ -6,13 +6,13 @@ import Image from "next/image";
 const NavBar = () => {
     const links = 
     <>
-    <Link href={"/"} className="">Home</Link>
-    <Link href={"/AllTiles/id"} className="">All Tiles</Link>
-    <Link href={"/MyProfile"} className="">My Profile</Link>
+    <Link href={"/"} className="text-[#f17c13] text-xl">Home</Link>
+    <Link href={"/AllTiles/id"} className="text-[#f17c13] text-xl">All Tiles</Link>
+    <Link href={"/MyProfile"} className="text-[#f17c13] text-xl ">My Profile</Link>
     </>
   return (
-    <div className="">
-      <div className="navbar bg-base-100 shadow-sm">
+    <div className="sticky top-0 z-50 py-4">
+      <div className="navbar container mx-auto rounded-full bg-base-100 backdrop-blur-md shadow-lg">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -39,8 +39,8 @@ const NavBar = () => {
               {links}
             </ul>
           </div>
-          <Image src={NavImg} alt="Tiles" width={30} height={30} className="ml-28"></Image>
-          <Link href={"/"} className="btn btn-ghost text-xl text-[#00a19e] ">TilesNexus</Link>
+          <Image src={NavImg} alt="Tiles" width={30} height={30} className="ml-6"></Image>
+          <Link href={"/"} className="btn btn-ghost text-2xl text-[#f17c13] font-bold">TilesNexus</Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-8">
@@ -48,7 +48,7 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link href={"/login"} className="btn btn-accent mr-28">Login</Link>
+          <Link href={"/login"} className="btn bg-[#f17c13] text-white mr-6">Login</Link>
         </div>
       </div>
     </div>
