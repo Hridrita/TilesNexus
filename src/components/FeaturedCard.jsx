@@ -4,7 +4,7 @@ import React from "react";
 const FeaturedCard = ({ trend }) => {
   return (
     <div>
-      <div className="card bg-base-100 w-full shadow-sm">
+      <div className="card bg-base-100 w-full shadow-sm hover:shadow-xl animate__animated animate__fadeInUp animate__delay-3s">
         <figure>
           <Image
             src={trend.image}
