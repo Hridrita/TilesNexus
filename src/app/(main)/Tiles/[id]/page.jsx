@@ -44,8 +44,9 @@ const TilesDetails = async ({ params }) => {
               <div>metarial: {tiles.material}</div>
             </div>
             <div className="card-actions justify-end">
-
-              <button className="btn bg-slate-900 text-white">Back</button>
+              <Link href={"/AllTiles"} className="btn bg-slate-900 text-white">
+                Back
+              </Link>
             </div>
           </div>
         </div>
