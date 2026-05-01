@@ -2,13 +2,14 @@ import Link from "next/link";
 import React from "react";
 import NavImg from "../assests/10367274.png"
 import Image from "next/image";
+import NavLink from "./NavLink";
 
 const NavBar = () => {
     const links = 
     <>
-    <Link href={"/"} className="text-[#f17c13] text-xl">Home</Link>
-    <Link href={"/AllTiles"} className="text-[#f17c13] text-xl">All Tiles</Link>
-    <Link href={"/MyProfile"} className="text-[#f17c13] text-xl ">My Profile</Link>
+    <NavLink href={"/"} className="text-slate-900 text-2xl">Home</NavLink>
+    <NavLink href={"/AllTiles"} className="text-slate-900 text-xl">All Tiles</NavLink>
+    <NavLink href={"/MyProfile"} className="text-slate-900 text-xl ">My Profile</NavLink>
     </>
   return (
     <div className="sticky top-0 z-50 py-4">
