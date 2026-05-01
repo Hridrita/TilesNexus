@@ -120,4 +120,46 @@
     "material": "Cement",
     "inStock": false
   }
-] }
+],
+
+
+"trending-tiles": [
+  {
+    "_id": "6632c1a1",
+    "title": "Rustic Terra Slate",
+    "image": "https://i.ibb.co.com/gZF8QwNW/image.png",
+    "category": "Natural Stone",
+    "price": 45.50,
+    "rating": 4.8,
+    "description": "A perfect blend of earthy red and charcoal gray, this slate tile brings a rugged yet sophisticated natural look to any outdoor or indoor accent wall."
+  },
+  {
+    "_id": "6632c1a2",
+    "title": "Emerald Glazed Ceramic",
+    "image": "https://i.ibb.co.com/Ldx8KXcq/image.png",
+    "category": "Modern Ceramic",
+    "price": 32.00,
+    "rating": 4.9,
+    "description": "With a high-gloss finish and deep emerald tones, these tiles are designed to create a bold, luxurious statement in modern kitchens and bathrooms."
+  },
+  {
+    "_id": "6632c1a3",
+    "title": "Artisan Geometric Mosaic",
+    "image": "https://i.ibb.co.com/j9gJkCBD/image.png",
+    "category": "Artistic Mosaic",
+    "price": 58.75,
+    "rating": 4.7,
+    "description": "Intricate patterns meeting monochrome elegance. These handcrafted mosaic tiles add a touch of timeless artistry to your living room flooring."
+  },
+  {
+    "_id": "6632c1a4",
+    "title": "Industrial Concrete Texture",
+    "image": "https://i.ibb.co.com/VWGQ7ms0/image.png",
+    "category": "Industrial Floor",
+    "price": 28.90,
+    "rating": 4.6,
+    "description": "Minimalist and durable. This concrete-textured tile is ideal for high-traffic areas, offering a clean, raw aesthetic for urban-style interiors."
+  }
+]
+
+ }
