@@ -25,7 +25,7 @@ const HomaPage = () => {
                     <p className='text-gray-200 mt-4 text-lg md:text-xl max-w-2xl drop-shadow-md animate__animated animate__fadeInDown animate__delay-1s'>
                         Explore our premium collection of textured stones and ceramic tiles at TilesNexus.
                     </p>
-                    <Link href={"/AllTiles/id"} className='mt-8 px-6 py-3 bg-[#f17c13] text-white rounded-full font-semibold hover:bg-[#f37c66] transition-all animate__animated animate__fadeInDown animate__delay-2s'>
+                    <Link href={"/AllTiles"} className='mt-8 px-6 py-3 bg-[#f17c13] text-white rounded-full font-semibold hover:bg-[#f37c66] transition-all animate__animated animate__fadeInDown animate__delay-2s'>
                         Browse Now
                     </Link>
                 </div>

@@ -9,3 +9,9 @@ export async function getTrendingTiles() {
   const data = await res.json();
   return data;
 }
+
+export async function getTilesDetailsById(Tiles_ID) {
+  const res = await fetch(`https://tiles-nexus-server.onrender.com/tiles/${Tiles_ID}`);
+  const data = await res.json();
+  return data;
+}

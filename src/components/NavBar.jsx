@@ -7,7 +7,7 @@ const NavBar = () => {
     const links = 
     <>
     <Link href={"/"} className="text-[#f17c13] text-xl">Home</Link>
-    <Link href={"/AllTiles/id"} className="text-[#f17c13] text-xl">All Tiles</Link>
+    <Link href={"/AllTiles"} className="text-[#f17c13] text-xl">All Tiles</Link>
     <Link href={"/MyProfile"} className="text-[#f17c13] text-xl ">My Profile</Link>
     </>
   return (
