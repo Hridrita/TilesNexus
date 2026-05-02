@@ -64,9 +64,9 @@ const loginPage = () => {
 
             
             <div className="form-control mt-4">
-              <button className="btn bg-purple-600 hover:bg-purple-700 text-white border-none rounded-lg shadow-lg shadow-purple-200 h-12 w-full text-lg font-bold transition-all active:scale-95">
+              <Link href={"/"} className="btn bg-purple-600 hover:bg-purple-700 text-white border-none rounded-lg shadow-lg shadow-purple-200 h-12 w-full text-lg font-bold transition-all active:scale-95">
                 Login
-              </button>
+              </Link>
             </div>
           </form>
 
