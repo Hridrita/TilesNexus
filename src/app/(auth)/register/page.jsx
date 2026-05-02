@@ -4,9 +4,17 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React from "react";
 import { useForm } from "react-hook-form";
+import { IoLogoGoogle } from "react-icons/io";
 import { toast } from "react-toastify";
 
 const registerPage = () => {
+    const handleGoggleSignIn = async() =>{
+            const data = await authClient.signIn.social({
+        provider: "google",
+      });
+    
+        }
+
     const router = useRouter();
   const {
     register,
@@ -133,6 +141,7 @@ const registerPage = () => {
               <button type="submit" className="btn bg-purple-600 hover:bg-purple-700 text-white border-none rounded-lg shadow-lg shadow-purple-200 h-12 w-full text-lg font-bold transition-all active:scale-95">
                 Register
               </button>
+              <button type="button" className='btn border-blue-500 text-blue-500 w-full mt-3' onClick={handleGoggleSignIn}> <IoLogoGoogle />Register With Goggle</button>
             </div>
           </form>
         </div>

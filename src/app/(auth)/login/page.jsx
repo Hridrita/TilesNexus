@@ -4,10 +4,19 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaEye } from "react-icons/fa";
+import { IoLogoGoogle } from "react-icons/io";
 import { toast } from "react-toastify";
 
 const loginPage = () => {
+    const handleGoggleSignIn = async() =>{
+        const data = await authClient.signIn.social({
+    provider: "google",
+  });
+
+    }
+
     const [showPassword, setShowPassword] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -98,10 +107,11 @@ const loginPage = () => {
               >
                 Login
               </button>
+              <button type="button" className='btn border-blue-500 text-blue-500 w-full mt-3' onClick={handleGoggleSignIn}> <IoLogoGoogle />Login With Goggle</button>
             </div>
           </form>
 
-          <div className="divider text-slate-400 text-xs my-8 uppercase tracking-widest">
+          <div className="divider text-slate-400 text-xs my-6 uppercase tracking-widest">
             OR
           </div>
 
