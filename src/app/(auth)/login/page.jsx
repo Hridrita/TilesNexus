@@ -1,11 +1,13 @@
 "use client";
 import { authClient } from "@/lib/auth-client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+import { FaEye } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 const loginPage = () => {
+    const [showPassword, setShowPassword] = useState(false);
   const {
     register,
     handleSubmit,
@@ -75,14 +77,15 @@ const loginPage = () => {
                 </label>
               </div>
               <input
-                name="password"
-                type="password"
+                
+                type={showPassword ? "text" : "password"}
                 placeholder="••••••••"
                 className="input input-bordered focus:input-primary bg-slate-50 border-slate-200 rounded-lg transition-all"
                 {...register("password", {
                   required: "Password Field is required",
                 })}
               />
+              
               {errors.password && (
                 <p className="text-red-500 mt-1">{errors.password.message}</p>
               )}
