@@ -76,7 +76,7 @@ const NavBar = () => {
             <span className="loading loading-spinner text-neutral"></span>
           ) : user ? (
             <div className="flex items-center gap-2">
-              <h2 className="text-blue-900 font-semibold">{user.name}</h2>
+              
               <Image
                 src={user.image || avatarImage}
                 alt="user avatar"
