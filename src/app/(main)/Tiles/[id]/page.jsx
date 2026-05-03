@@ -8,9 +8,9 @@ const TilesDetails = async ({ params }) => {
   const tiles = await getTilesDetailsById(id);
 
   return (
-    <div className="container mx-auto flex flex-col md:flex-row gap-6 py-10 px-4 justify-center items-stretch">
-      <div className="flex-1 max-w-sm">
-        <div className="card bg-base-100 shadow-xl h-full">
+    <div className="container mx-auto flex flex-col md:flex-row gap-6 py-10 px-4 justify-center items-center md:items-stretch">
+      <div className="w-full max-w-sm flex justify-center">
+        <div className="card bg-base-100 shadow-xl w-full">
           <figure className="h-64">
             <Image
               src={tiles.image}
@@ -32,8 +32,8 @@ const TilesDetails = async ({ params }) => {
         </div>
       </div>
 
-      <div className="flex-1 max-w-md">
-        <div className="card bg-base-100 w-96 shadow-sm">
+      <div className="w-full max-w-sm flex justify-center">
+        <div className="card bg-base-100 shadow-sm border border-slate-100 w-full">
           <div className="card-body">
             <div className="flex justify-between">
               <h2 className="card-title text-3xl text-[#5c4b36]">

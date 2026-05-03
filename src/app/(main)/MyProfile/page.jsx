@@ -37,15 +37,15 @@ const MyProfilePage = () => {
     if (isPending) return <div className="flex justify-center my-10"><span className="loading loading-spinner"></span></div>;
 
     return (
-        <div className="container mx-auto p-6 max-w-2xl">
+        <div className="container mx-auto p-4 md:p-6 max-w-2xl">
             <div className="card bg-base-100 shadow-xl border border-slate-200">
-                <div className="card-body">
-                    <h2 className="text-3xl font-bold text-center text-slate-800 mb-6">My Profile</h2>
+                <div className="card-body p-5 md:p-8">
+                    <h2 className="text-2xl md:text-3xl font-bold text-center text-slate-800 mb-6">My Profile</h2>
                     
                     
                     <div className="flex flex-col items-center mb-8">
                         <div className="avatar mb-4">
-                            <div className="w-24 h-24 rounded-full ring ring-[#f17c13] ring-offset-2">
+                            <div className="w-20 h-20 md:w-24 md:h-24 rounded-full ring ring-[#f17c13] ring-offset-2">
                                 <Image 
                                     src={user?.image || avatarImage} 
                                     alt="Profile" 
@@ -65,7 +65,7 @@ const MyProfilePage = () => {
                             <label className="label font-semibold">Full Name</label>
                             <input 
                                 type="text" 
-                                className="input input-bordered focus:input-primary ml-16" 
+                                className="input input-bordered focus:input-primary w-full" 
                                 {...register("name", { required: true })}
                             />
                         </div>
@@ -74,7 +74,7 @@ const MyProfilePage = () => {
                             <label className="label font-semibold">Profile Image URL</label>
                             <input 
                                 type="text" 
-                                className="input input-bordered focus:input-primary ml-4" 
+                                className="input input-bordered focus:input-primary w-full" 
                                 {...register("image")}
                             />
                         </div>

@@ -7,10 +7,10 @@ import Featured from './Featured';
 
 const HomaPage = () => {
     return (
-        <div className='container mx-auto max-w-7xl'>
+        <div className='container mx-auto max-w-7xl px-4 md:px-6 lg:px-8'>
             
             
-            <div className='relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-xl mt-8'>
+            <div className='relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-[30px] md:rounded-[50px] mt-6 md:mt-10 mt-8'>
                 <Image 
                     src={BannerImg} 
                     alt="banner" 
