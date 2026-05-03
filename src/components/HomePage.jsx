@@ -7,7 +7,7 @@ import Featured from './Featured';
 
 const HomaPage = () => {
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto max-w-7xl'>
             
             
             <div className='relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-xl mt-8'>
